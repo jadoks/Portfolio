@@ -2,15 +2,15 @@ import React from 'react';
 import './App.css';
 
 // Components
-import Header from './components/Header';
-import Name from './components/Name';
-import Profile from './components/Profile';
-import Skills from './components/Skills';
-import Interest from './components/Interest';
-import About from './components/About';
-import Education from './components/Education';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
+import Header from "./components/Header.jsx";
+import Name from "./components/Name.jsx";
+import Profile from "./components/Profile.jsx";
+import Skills from "./components/Skills.jsx";
+import Interest from "./components/Interest.jsx";
+import About from "./components/About.jsx";
+import Education from "./components/Education.jsx";
+import Experience from "./components/Experience.jsx";
+import Projects from "./components/Projects.jsx";
 
 export default function App() {
   return (
