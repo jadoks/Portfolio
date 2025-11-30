@@ -1,4 +1,4 @@
-// src/components/Projects.jsx
+
 import React from 'react';
 
 const projects = [
@@ -23,7 +23,7 @@ export default function Projects() {
       <div className="projects-grid">
         {projects.map((proj) => (
           <div key={proj.title} className="project">
-            {/* Image above the title */}
+            { }
             <img
               src={proj.image}
               alt={`${proj.title} illustration`}
