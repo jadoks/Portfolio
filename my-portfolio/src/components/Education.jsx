@@ -2,7 +2,7 @@
 import React from 'react';
 const projects = [
   {
-    title: ' Bachelor of Science in Information Technology (BSIT) at Cebu Techonlogical University - Argao Campus',
+    title: ' Bachelor of Science in Information Technology (BSIT) at Cebu Technological University - Argao Campus',
     desc: 'Currently Studying',
   },
 ];
