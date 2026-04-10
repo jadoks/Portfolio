@@ -11,12 +11,12 @@ import About from "./components/About.jsx";
 import Education from "./components/Education.jsx";
 import Experience from "./components/Experience.jsx";
 import Projects from "./components/Projects.jsx";
+import Certificates from "./components/Certificates.jsx";
 
 export default function App() {
   return (
     <div className="container"> 
       <div className="grid">
-        {/* SIDEBAR */}
         <aside className="card fade-in slide-left">
           <Header />
           <Name />
@@ -25,7 +25,6 @@ export default function App() {
           <Interest />
         </aside>
 
-        {/* MAIN */}
         <main>
           <About />
           <section className="card section fade-in">
@@ -34,6 +33,7 @@ export default function App() {
               <Experience />
               <Education />
               <Projects />
+              <Certificates />
             </div>
           </section>
         </main>
