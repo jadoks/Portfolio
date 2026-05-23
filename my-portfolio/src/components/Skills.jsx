@@ -8,6 +8,7 @@ const skillList = [
   'React',
   'Basic Network Configuration',
   'Programming',
+  'Time Management',
 ];
 
 export default function Skills() {
