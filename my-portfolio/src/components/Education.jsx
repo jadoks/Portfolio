@@ -1,24 +1,22 @@
-// src/components/Education.jsx
 import React from 'react';
-const projects = [
+
+const education = [
   {
-    title: ' Bachelor of Science in Information Technology (BSIT) at Cebu Technological University - Argao Campus',
+    title:
+      'Bachelor of Science in Information Technology (BSIT) at Cebu Technological University - Argao Campus',
     desc: 'Currently Studying',
   },
 ];
-export default function Education() {
 
+export default function Education() {
   return (
-    <div className="item">
-      <h4>Education</h4>
-      <div className="projects-grid">
-        {projects.map((proj) => (
-          <div key={proj.title} className="project">
-            <strong>{proj.title}</strong>
-            <p className="muted">{proj.desc}</p>
-          </div>
-        ))}
-      </div>
+    <div className="projects-grid">
+      {education.map((item) => (
+        <div key={item.title} className="project">
+          <strong>{item.title}</strong>
+          <p className="muted">{item.desc}</p>
+        </div>
+      ))}
     </div>
   );
 }
