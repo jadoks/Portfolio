@@ -1,7 +1,7 @@
 // src/components/Interest.jsx
 import React from 'react';
 
-const interests = ['Web design', 'Online Games', 'Networking'];
+const interests = ['Web Design', 'Online Games', 'Networking'];
 
 export default function Interest() {
   return (

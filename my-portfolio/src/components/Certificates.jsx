@@ -7,10 +7,10 @@ const certificates = [
     date: "2026-03-31",
     image: "Introduction_to_Modern_AI_certificate.png",
   },{
-    title: "Introduction to Modern AI",
-    issuer: "DICT-ITU DTC Initiative",
-    date: "2026-03-31",
-    image: "Introduction_to_Modern_AI_certificate.png",
+    title: "PSITE7 Innovation Challenge 2026",
+    issuer: "CEBU ICT STUDENT CONGRESS 2026",
+    date: "2026-04-30",
+    image: "PSITE_2026_National_Student_Congress_certificate.png",
   }
 ];
 
