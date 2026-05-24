@@ -120,7 +120,7 @@ export default function App() {
           </section>
 
           <section className="section fade-in" id="projects">
-            <h3>Projects</h3>
+            <h3>Academic Projects</h3>
             <div className="timeline">
               <Projects />
             </div>
