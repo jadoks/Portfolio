@@ -11,6 +11,11 @@ const projects = [
     desc: "A Vehicle Rental System.",
     image: "VroomEase.png",
   },
+  {
+    title: "ParseIT Hub",
+    desc: "LMS platform + AI-powered tools.",
+    image: "ParseITHub.png",
+  },
 ];
 
 export default function Projects() {
