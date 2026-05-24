@@ -18,6 +18,12 @@ const certificates = [
 export default function Certificates() {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
 
+  const handlePreview = (cert) => {
+    if (window.innerWidth >= 1024) {
+      setSelectedCertificate(cert);
+    }
+  };
+
   return (
     <>
       <div className="projects-grid certificate-grid">
@@ -26,7 +32,7 @@ export default function Certificates() {
             <button
               type="button"
               className="certificate-preview-button"
-              onClick={() => setSelectedCertificate(cert)}
+              onClick={() => handlePreview(cert)}
               aria-label={`Preview ${cert.title} certificate`}
             >
               <img

@@ -1083,3 +1083,14 @@ body[data-theme="light"] .certificate-link {
   background: #000000;
   border-color: #000000;
 }
+
+@media (max-width: 1023px) {
+  .certificate-preview-button {
+    cursor: default;
+  }
+
+  .certificate-preview-button:hover .certificate-image {
+    transform: none;
+    opacity: 1;
+  }
+}
