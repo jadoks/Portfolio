@@ -3,8 +3,18 @@ import React from 'react';
 const education = [
   {
     title:
-      'Bachelor of Science in Information Technology (BSIT) at Cebu Technological University - Argao Campus',
-    desc: 'Currently Studying',
+      'Canbanua Elementary School',
+    desc: 'S.Y. 2012-2018',
+  },
+  {
+    title:
+      'Argao National High School',
+    desc: 'S.Y. 2018-2023',
+  },
+  {
+    title:
+      'Cebu Technological University (BSIT Student) - Argao',
+    desc: 'S.Y. 2023-Present',
   },
 ];
 

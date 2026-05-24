@@ -14,6 +14,7 @@ import Certificates from "./components/Certificates.jsx";
 
 export default function App() {
   const [theme, setTheme] = useState("dark");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
@@ -23,9 +24,12 @@ export default function App() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <>
-      {/* Fixed Navigation */}
       <nav className="navbar fade-in">
         <div className="nav-brand">
           <div className="logo-text">
@@ -38,89 +42,92 @@ export default function App() {
           </div>
         </div>
 
-        <div className="nav-links">
-          <a href="#profile">
+        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <a href="#profile" onClick={closeMenu}>
             <i className="bi bi-house-door-fill"></i>
             <span>Home</span>
           </a>
 
-          <a href="#experience">
+          <a href="#experience" onClick={closeMenu}>
             <i className="bi bi-briefcase-fill"></i>
             <span>Experience</span>
           </a>
 
-          <a href="#education">
+          <a href="#education" onClick={closeMenu}>
             <i className="bi bi-mortarboard-fill"></i>
             <span>Education</span>
           </a>
 
-          <a href="#projects">
+          <a href="#projects" onClick={closeMenu}>
             <i className="bi bi-folder-fill"></i>
             <span>Projects</span>
           </a>
 
-          <a href="#certificates">
+          <a href="#certificates" onClick={closeMenu}>
             <i className="bi bi-award-fill"></i>
             <span>E-Certificates</span>
           </a>
         </div>
 
-        {/* Theme Toggle */}
-        <button
-          className="theme-toggle"
-          onClick={toggleTheme}
-        >
-          <i
-            className={
-              theme === "dark"
-                ? "bi bi-sun-fill"
-                : "bi bi-moon-stars-fill"
-            }
-          ></i>
-        </button>
+        <div className="nav-actions">
+          <button className="theme-toggle" onClick={toggleTheme}>
+            <i
+              className={
+                theme === "dark"
+                  ? "bi bi-sun-fill"
+                  : "bi bi-moon-stars-fill"
+              }
+            ></i>
+          </button>
+
+          <button
+            className="hamburger"
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            <i className={menuOpen ? "bi bi-x-lg" : "bi bi-list"}></i>
+          </button>
+        </div>
       </nav>
 
       <div className="container">
         <main className="main-container">
-          <section
-            className="card fade-in slide-left profile-container"
-            id="profile"
-          >
-            <Header />
-            <Name />
-            <Profile />
-            <About />
-            <Skills />
-            <Interest />
+          <section className="fade-in slide-left profile-container" id="profile">
+            <div className="profile-left">
+              <Name />
+              <Profile />
+              <About />
+              <Skills />
+              <Interest />
+            </div>
+
+            <div className="profile-right">
+              <Header />
+            </div>
           </section>
 
-          <section className="card section fade-in" id="experience">
+          <section className="section fade-in" id="experience">
             <h3>Experience</h3>
-
             <div className="timeline">
               <Experience />
             </div>
           </section>
 
-          <section className="card section fade-in" id="education">
+          <section className="section fade-in" id="education">
             <h3>Education</h3>
-
             <div className="timeline">
               <Education />
             </div>
           </section>
 
-          <section className="card section fade-in" id="projects">
+          <section className="section fade-in" id="projects">
             <h3>Projects</h3>
-
             <div className="timeline">
               <Projects />
             </div>
           </section>
 
-          <section className="card section fade-in" id="certificates">
+          <section className="section fade-in" id="certificates">
             <h3>E-Certificates</h3>
-
             <div className="timeline">
               <Certificates />
             </div>

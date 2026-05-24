@@ -50,6 +50,7 @@ export default function Name() {
   return (
     <div className="name">
       <h2>
+        <span>Hi, I'm </span>
         <span className="typing-text">{text}</span>
         <span className="cursor">|</span>
       </h2>

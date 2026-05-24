@@ -6,6 +6,7 @@ const skillList = [
   'CSS',
   'JavaScript',
   'React',
+  'React Native + Expo',
   'Basic Network Configuration',
   'Programming',
   'Time Management',
