@@ -13,6 +13,12 @@ const certificates = [
     date: "2026-04-30",
     image: "PSITE_2026_National_Student_Congress_certificate.png",
   },
+  {
+    title: "Network Addressing and Basic Troubleshooting",
+    issuer: "DICT-ITU DTC Initiative",
+    date: "2026-05-25",
+    image: "Network_Addressing_and_Basic_Troubleshooting.png",
+  },
 ];
 
 export default function Certificates() {
