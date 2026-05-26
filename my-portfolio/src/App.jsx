@@ -15,10 +15,26 @@ import Certificates from "./components/Certificates.jsx";
 export default function App() {
   const [theme, setTheme] = useState("dark");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
+  // Dynamic Theme management
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
   }, [theme]);
+
+  // Monitor page scroll to show/hide the arrow up button
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
@@ -26,6 +42,13 @@ export default function App() {
 
   const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -134,10 +157,19 @@ export default function App() {
           </section>
         </main>
       </div>
+
       <footer className="footer fade-in">
         <p>&copy; 2026 Jade "Jadok" Lisondra. All rights reserved.</p>
       </footer>
+
+      {/* Back to Top Floating Action Button */}
+      <button 
+        className={`back-to-top ${showScrollTop ? "show" : ""}`} 
+        onClick={scrollToTop}
+        aria-label="Scroll back to top"
+      >
+        <i className="bi bi-arrow-up"></i>
+      </button>
     </>
-    
   );
 }
