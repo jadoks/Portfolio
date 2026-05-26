@@ -134,6 +134,10 @@ export default function App() {
           </section>
         </main>
       </div>
+      <footer className="footer fade-in">
+        <p>&copy; 2026 Jade "Jadok" Lisondra. All rights reserved.</p>
+      </footer>
     </>
+    
   );
 }
