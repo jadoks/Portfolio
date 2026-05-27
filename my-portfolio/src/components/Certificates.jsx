@@ -19,6 +19,12 @@ const certificates = [
     date: "2026-05-25",
     image: "Network_Addressing_and_Basic_Troubleshooting.png",
   },
+  {
+    title: "AI Class for ASEAN Youth",
+    issuer: "ASEAN Foundation",
+    date: "2026-05-27",
+    image: "AI_Class.png",
+  },
 ];
 
 export default function Certificates() {
