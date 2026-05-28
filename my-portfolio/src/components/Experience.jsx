@@ -2,29 +2,10 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Web Development Practice Projects',
-    desc: 'Created small websites and UI layouts using HTML, CSS, JavaScript, and React to strengthen front-end development skills. Focused on responsive design and clean user interface implementation.',
+    title: 'TESDA - Data Analytics NC III',
+    desc: 'Demonstrated proficiency in data management, interpretation, and structural problem-solving. Analyzed complex datasets to extract actionable insights, performed thorough data cleaning, and designed functional data visualizations to present findings clearly to stakeholders.',
   },
-  {
-    title: 'UI/UX Design Exploration',
-    desc: 'Designed simple user interfaces and prototypes for personal or school projects. Practiced wireframing, layout organization, and user-centered design principles.',
-  },
-  {
-    title: 'Network Configuration Tasks (School Activities)',
-    desc: 'Performed basic network configuration exercises such as IP addressing, subnetting, router setup, and LAN configuration as part of IT coursework.',
-  },
-  {
-    title: 'Programming Coursework and Mini Projects',
-    desc: 'Built small programs and solved logic-based tasks using different programming fundamentals learned in BSIT subjects.',
-  },
-  {
-    title: 'Collaborative Academic Projects',
-    desc: 'Worked with classmates to develop group projects, troubleshoot issues, and present outputs—strengthening teamwork, communication, and problem-solving abilities.',
-  },
-  {
-    title: 'Dean’s List Achievement',
-    desc: 'Recognized for outstanding academic performance in multiple semesters, demonstrating consistency, dedication, and strong work ethic in BSIT coursework.',
-  },
+
 ];
 
 export default function Experience() {

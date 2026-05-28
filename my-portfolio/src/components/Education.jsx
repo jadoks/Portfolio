@@ -1,20 +1,16 @@
 import React from 'react';
 
 const education = [
+
   {
     title:
-      'Canbanua Elementary School',
-    desc: 'S.Y. 2012-2018',
-  },
-  {
-    title:
-      'Argao National High School',
-    desc: 'S.Y. 2018-2023',
-  },
-  {
-    title:
-      'Cebu Technological University (BSIT Student) - Argao',
+      'Bachelor of Science in Information Technology at Cebu Technological University - Argao Campus',
     desc: 'S.Y. 2023-Present',
+  },
+  {
+    title:
+      'Technical Vocational Livelihood (ICT Strand) - Computer System Servicing NCII at Argao National High School',
+    desc: 'S.Y. 2021-2023',
   },
 ];
 
